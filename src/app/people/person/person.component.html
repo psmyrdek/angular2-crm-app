@@ -1,0 +1,15 @@
+<section class="person">
+  <div class="row">
+    <div class="col-md-2">
+        <img class="person-avatar mx-auto d-block" src="https://placeholdit.imgix.net/~text?txtsize=10&txt=80%C3%9780&w=80&h=80" alt="">
+    </div>
+    <div class="col-md-8" (click)="personSelected(person)">
+      <p class="person-data fontBold">{{person.firstName}} {{person.lastName}}</p>
+      <p class="person-data">{{person.jobTitle}}</p>
+      <p class="person-data">{{person.city}}</p>
+    </div>
+    <div class="col-md-2">
+      <input class="person-selector" type="checkbox" (click)="personSelected(person)">
+    </div>
+  </div>
+<section>
